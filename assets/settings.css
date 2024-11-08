@@ -1,0 +1,21 @@
+main {
+  margin: 0 auto;
+
+  color: #0a0a0a;
+}
+h1 {
+  margin-top: 3rem;
+  text-align: start;
+
+  font-size: 3rem;
+}
+
+.row {
+  padding-top: 1.5rem;
+  border-top: 2px solid #666666;
+}
+
+hr {
+  width: 100%;
+  color: #0a0a0a;
+}
