@@ -1,0 +1,82 @@
+@import '../Sass-Rework/scss/functions';
+// ora possiamo importare "_variables.scss"
+@import '../Sass-Rework/scss/variables';
+// ora tutti i colori (primary, secondary etc.) sono definiti e posso utilizzarli/sovrascriverli
+// ora abbiamo accesso alle definizioni dei colori fondamentali di bootstrap e soprattutto alla varibile "$theme-colors", che li raggruppa in una mappa
+// proviamo a modificare i colori principali
+$sfondo-netflix: rgb(20, 20, 20);
+$new-secondary: rgba(255, 255, 255, 0.2);
+
+$acceso: #fff;
+
+// a questo punto li andiamo ad inserire in una nostra versione di "$theme-colors", che in ultimo luogo andremo a FONDERE con la vera $theme-colors
+$new-theme-colors: (
+  'sfondo': $sfondo-netflix,
+  'acceso': $acceso,
+  'opaco': $new-secondary,
+);
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+@import '../Sass-Rework/scss/bootstrap.scss';
+
+body {
+  font-family: 'Montserrat', serif;
+}
+
+.row {
+  color: #fff;
+  div {
+    display: flex;
+    align-items: center;
+  }
+}
+article {
+  padding-top: 2rem;
+  #generi {
+    width: 120px;
+    background-color: black;
+    padding: 2px 1rem;
+    border: 2px solid white;
+  }
+  div > i {
+    border: 1px solid white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+}
+article p,
+h1 {
+  padding-right: 2rem;
+  i {
+    padding: 1rem;
+  }
+}
+
+main > .container {
+  height: 200px;
+  .row img {
+    height: 150px;
+  }
+}
+
+footer {
+  margin-top: 6rem;
+  i {
+    padding: 1rem;
+    font-size: 2rem;
+    opacity: 0.8;
+  }
+  button {
+    color: white;
+    border: 2px solid white;
+    margin: 1rem;
+  }
+}
+#copy {
+  font-size: 0.8rem;
+}
+.flex-wrap p {
+  margin-right: 1.5rem;
+  width: 180px;
+}

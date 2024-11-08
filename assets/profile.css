@@ -1,0 +1,77 @@
+body {
+  background-color: #141414;
+}
+
+main {
+  margin: 0 auto;
+  background-color: #141414;
+  color: #fff;
+}
+h1 {
+  margin-top: 5rem;
+  text-align: start;
+  padding-left: 5rem;
+  font-size: 3rem;
+}
+
+.row {
+  padding-top: 1.5rem;
+  border-top: 2px solid #666666;
+}
+.col-3 button {
+  background-color: #fff;
+  font-weight: bold;
+  padding: 0.5rem 1.2rem;
+}
+
+.col-9 p:nth-of-type(1) {
+  background-color: #666666;
+  padding: 0.5rem 0 0.5rem 2rem;
+  font-size: 1.3rem;
+}
+.inglese {
+  background-color: black;
+  width: 100px;
+
+  border: 2px solid white;
+}
+.matu {
+  background-color: #666666;
+  width: 200px;
+}
+p i {
+  padding: 0.8rem;
+}
+.in {
+  display: block;
+}
+.in i {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  background-color: transparent;
+  color: #666666;
+}
+
+#save {
+  padding: 0.3rem 1.3rem;
+
+  background-color: white;
+  color: black;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.scuri {
+  padding: 0.3rem 1.3rem;
+  border: 2px solid #666666;
+  background-color: transparent;
+  color: #666666;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.check {
+  transform: scale(1.5);
+  margin-right: 1rem;
+  background-color: #666666;
+}
